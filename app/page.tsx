@@ -1,24 +1,32 @@
-const Home = () => {
-    return (
-        <div>
-            <h1 className="text-3xl font-bold underline">Hello world!</h1>
-            Preview Gabrielle Essence Eau De Parfum A floral, solar and
-            voluptuous interpretation composed by Olivier Polge,
-            Perfumer-Creator for the House of CHANEL. $149.99 $169.99 Add to
-            Cart
-            <div className="attribution">
-                Challenge by{" "}
-                <a
-                    href="https://www.frontendmentor.io?ref=challenge"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    Frontend Mentor
-                </a>
-                . Coded by <a href="#">Rahi Khan</a>.
-            </div>
+import PreviewImage from "./PreviewImage";
+import Headings from "./Headings";
+import Pricings from "./Pricings";
+import Button from "./Button";
+import Paragraph from "./Paragraph";
+
+const Home = () => (
+    <main className="bg-white flex flex-col rounded-xl md:flex-row md:justify-center md:items-center md:max-w-5xl">
+        {/*//// Image */}
+        <PreviewImage />
+
+        <div className="p-6 space-y-6 md:p-10 md:w-[50%] lg:space-y-10">
+            {/*//// Headings */}
+            {/* @ts-ignore */}
+            <Headings />
+
+            {/*//// Paragraph */}
+            {/* @ts-ignore */}
+            <Paragraph />
+
+            {/*//// Price */}
+            {/* @ts-ignore */}
+            <Pricings />
+
+            {/*//// Button */}
+            {/* @ts-ignore */}
+            <Button />
         </div>
-    );
-};
+    </main>
+);
 
 export default Home;

@@ -1,0 +1,10 @@
+{
+    "appTitle": "Product Preview Card Component",
+    "appDesc": "Frontend Mentor Challenge done by Next.js and TailwindCSS",
+    "subHeading": "PERFUME",
+    "mainHeading": "Gabrielle Essence Eau De Parfum",
+    "paragraph": "A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.",
+    "oldPrice": "$169.99",
+    "newPrice": "$149.99",
+    "buttonText": "Add to Cart"
+}
