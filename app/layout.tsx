@@ -1,18 +1,13 @@
-import './globals.css'
+import { LayoutProps } from "types";
+import "./globals.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
+const Layout: React.FC<LayoutProps> = ({ children }) => (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
-      <body>{children}</body>
+        <head />
+        <body className="bg-[#f2ebe3] flex justify-center items-center h-screen p-7">
+            {children}
+        </body>
     </html>
-  )
-}
+);
+
+export default Layout;
